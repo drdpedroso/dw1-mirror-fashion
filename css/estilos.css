@@ -1,0 +1,408 @@
+body {
+	color: #333333;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	width: 940px;
+}
+
+header {
+	position: relative;
+}
+
+.painel {
+	margin: 10px 0;
+	padding: 10px;
+	width: 445px;
+    li {
+			display: inline-block;
+			vertical-align: top;
+			width: 140px;
+
+			margin: 2px;
+			padding-bottom: 10px;
+        &:hover {
+            /* regras que estavam em .painel li:hover {...} */
+            &:nth-child(2n) {
+                /* regras que estavam em .painel li:nth-child(2n):hover {...} */
+            }
+        }
+    }
+    h2 {
+			font-size: 24px;
+			font-weight: bold;
+			text-transform: uppercase;
+			font-family: 'Bad Script', sans-serif;
+			margin-bottom: 10px;
+        &:before {
+					content: '\2756';
+					padding-right: 5px;
+					opacity: 0.4;
+        }
+    }
+    a {
+			color: #333;
+			font-size: 14px;
+			text-align: center;
+			text-decoration: none;
+    }
+    .mostra-mais {
+        /* regras que estavam em .painel .mostra-mais {...} */
+    }
+}
+
+
+.pause,
+.play {
+display: block;
+position: absolute;
+right: 15px;
+top: 15px;
+}
+.pause {
+border-left: 10px solid #900;
+border-right: 10px solid #900;
+height: 30px;
+width: 5px;
+}
+.play {
+border-left: 25px solid #900;
+border-bottom: 15px solid transparent;
+border-top: 15px solid transparent;
+}
+
+.sacola {
+	background: url(../img/sacola.png) no-repeat top right;
+
+	width: 140px;
+	font-size: 14px;
+	text-align: right;
+	padding-right: 35px;
+	padding-top: 8px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.menu-opcoes {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.menu-opcoes ul {
+	font-size: 15px;
+}
+
+.menu-opcoes ul li {
+	display: inline;
+	margin-left: 20px;
+}
+
+.menu-opcoes a {
+	color: #003366;
+}
+
+.busca,
+.menu-departamentos {
+	background-color: #dcdcdc;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	width: 230px;
+}
+
+.busca h2,
+.busca form,
+.menu-departamentos h2 {
+	margin: 10px;
+}
+
+.menu-departamentos li {
+	background-color: white;
+	margin-bottom: 1px;
+	padding: 5px 10px;
+}
+
+.menu-departamentos a {
+	color: #333333;
+	text-decoration: none;
+}
+
+.busca input {
+	vertical-align: middle;
+}
+
+.busca input[type=search] {
+	width: 170px;
+}
+
+.busca,
+.menu-departamentos {
+	float: left;
+}
+
+.menu-departamentos {
+	margin-top: 10px;
+	padding-bottom: 10px;
+	clear: left;
+}
+
+.destaque {
+	margin-top: 10px;
+}
+
+.destaque img {
+	margin-left: 10px;
+}
+
+
+.novidades {
+	float: left;
+	background-color: #f5dcdc;
+}
+
+.mais-vendidos {
+	float: right;
+	background-color: #dcdcf5;
+}
+
+
+footer {
+	background-image: url(../img/fundo-rodape.png);
+	clear: both;
+	padding: 20px 0;
+}
+
+footer .container {
+	position: relative;
+}
+
+.social {
+	position: absolute;
+	top: 12px;
+	right: 0;
+}
+
+.social li {
+	display: inline-block;
+	margin-left: 25px;
+}
+
+.social li a {
+	height: 32px;
+	width: 32px;
+
+	display: block;
+	text-indent: -99999px;
+}
+
+.social a[href*="facebook"] {
+	background-image: url(../img/facebook.png);
+}
+
+.social a[href*="twitter"] {
+	background-image: url(../img/twitter.png);
+}
+
+.social a[href*="plus"] {
+	background-image: url(../img/googleplus.png);
+}
+
+.menu-departamentos li li a:before {
+	content: '\272A';
+	padding-right: 3px;
+}
+
+.novidades {
+	background-color: #f5dcdc;
+	background: linear-gradient(#f5dcdc, #bebef4);
+}
+
+.mais-vendidos {
+	background: #dcdcf5;
+	background: linear-gradient(#dcdcf5, #f4bebe);
+}
+
+.painel button {
+	display: none;
+}
+
+.painel-compacto li:nth-child(n+7) {
+	display: none;
+}
+
+.painel-compacto button {
+	display: block;
+}
+
+.painel button {
+
+	float: right;
+	margin-right: 10px;
+	padding: 10px;
+
+
+	background-color: #333;
+	border: 0;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px rgba(30,30,30,0.5);
+	color: white;
+	font-size: 1em;
+	text-decoration: none;
+	text-shadow: 1px 0 1px black;
+
+
+	transition: 0.3s;
+}
+
+.painel button:hover {
+	background-color: #393939;
+	box-shadow: 1px 0 20px rgba(200,200,120,0.9);
+}
+
+.painel button {
+	color: white;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.painel button:after {
+
+	content: '';
+	display: block;
+	height: 0;
+	width: 0;
+
+
+	border-top: 10px solid #333;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+
+
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+
+
+	transition: 0.3s;
+}
+
+.painel button:hover:after {
+	border-top-color: #393939;
+}
+
+
+/*RESET*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*MOBILE*/
+
+@media (max-width: 939px) {
+	@media (min-width: 480px) { header h1 {
+	  margin: 5px 0;
+	}
+	  .menu-departamentos {
+	    padding-bottom: 10px; margin-bottom: 10px;
+	  }
+	.menu-departamentos nav > ul {
+	  -webkit-column-count: 2; -moz-column-count: 2;
+	  column-count: 2; }
+	}
+
+	@media (min-width: 720px) {
+	header h1 { text-align: left;
+	} .menu-opcoes {
+	position: absolute; }
+	.sacola { display: block;
+	}
+	.painel li {
+	width: 15%; }
+	.busca, .menu-departamentos { margin-right: 1%;
+	width: 30%;
+	}
+	.menu-departamentos nav > ul {
+	-webkit-column-count: 1; -moz-column-count: 1; column-count: 1;
+	}
+	.destaque img {
+	width: 69%; }
+	}
+
+	.container {
+	  width: 96%;
+	}
+
+	.menu-opcoes ul li {
+	  display: inline-block;
+	  margin: 5px;
+	}
+
+	.painel {
+	  width: auto;
+	}
+
+	.painel li {
+	  width: 30%;
+	}
+
+	.painel img {
+	  width: 100%;
+	}
+
+	.busca,
+	.menu-departamentos,
+	.destaque img {
+	  margin-right: 0;
+	  width: 100%;
+	}
+}
